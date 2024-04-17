@@ -77,12 +77,12 @@ body{
 /*Desktops e TV's*/
 @media screen and (min-width: 1200px) {
     main {
-        width: 850px;
+        width: 830px;
         font-size: 1.5em;
     }
 
     article > h1 {
-        width: 900px;
+        width: 830px;
     }
 
     p#vire {
@@ -90,7 +90,7 @@ body{
     }
 
     section#grid {
-        width: 1050px;
+        width: 1000px;
         justify-content: center;
         grid-template-columns: 200px 400px 400px;
         grid-template-rows: 200px 300px 200px;
