@@ -1,0 +1,135 @@
+@charset "UTF-8";
+
+body{
+    height: 100%;
+}
+
+/*Tablets*/
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    main {
+        width: 700px;
+        font-size: 1.5em;
+    }
+
+    article > h1 {
+        width: 700px;
+    }
+
+    section#grid {
+        width: 700px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 400px 1fr;
+    }
+}
+
+/*Tablets maiores e Notebooks*/
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    main {
+        width: 900px;
+        font-size: 1.5em;
+    }
+
+    article > h1 {
+        width: 900px;
+    }
+
+    p#vire {
+        display: none;
+    }
+
+    section#grid {
+        width: 900px;
+        height: 600px;
+        grid-template-columns: 1fr 1fr 400px;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "d1 d1 d2"
+        "d3 d4 d4"
+        "d5 d6 d6" ;
+        grid-auto-rows: 1fr;
+    }
+    
+    div#um {
+        grid-area: d1;
+    }
+
+    div#dois {
+        grid-area: d2;
+    }
+
+    div#tres {
+        grid-area: d3;
+    }
+
+    div#quatro {
+        grid-area: d4;
+    }
+
+    div#cinco {
+        grid-area: d5;
+    }
+
+    div#seis {
+        grid-area: d6;
+    }
+}
+
+/*Desktops e TV's*/
+@media screen and (min-width: 1200px) {
+    main {
+        width: 900px;
+        font-size: 1.5em;
+    }
+
+    article > h1 {
+        width: 900px;
+    }
+
+    p#vire {
+        display: none;
+    }
+
+    section#grid {
+        width: 1050px;
+        justify-content: center;
+        grid-template-columns: 200px 400px 400px;
+        grid-template-rows: 200px 300px 200px;
+        grid-template-areas: 
+        "d1 d2 d3"
+        "d4 d2 d6" 
+        "d5 d2 d6" ;
+    }
+
+    section#grid:hover {
+        transform: scale(1.02);
+        transition: .2s;
+        /*transition: .2s;
+        grid-template-columns: 215px 415px 415px;
+        grid-template-rows: 215px 315px 215px;
+        width: 1200px;*/
+    }
+
+    div#um {
+        grid-area: d1;
+    }
+
+    div#dois {
+        grid-area: d2;
+    }
+
+    div#tres {
+        grid-area: d3;
+    }
+
+    div#quatro {
+        grid-area: d4;
+    }
+
+    div#cinco {
+        grid-area: d5;
+    }
+
+    div#seis {
+        grid-area: d6;
+    }
+}
